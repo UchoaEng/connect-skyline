@@ -2,7 +2,7 @@ import { useState } from "react";
 import IntegrationSetup from "@/components/IntegrationSetup";
 
 const Index = () => {
-  const [showSetup, setShowSetup] = useState(true);
+  const [showSetup, setShowSetup] = useState(false);
 
   const mockIntegration = {
     name: "Amazon Web Services",
@@ -22,15 +22,27 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Cybersecurity Integration Setup</h1>
-        <p className="text-xl text-muted-foreground mb-8">Demo of AWS integration setup flow</p>
-        <button 
-          onClick={() => setShowSetup(true)}
-          className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
-        >
-          View AWS Setup Flow
-        </button>
+      <div className="text-center space-y-8">
+        <h1 className="text-4xl font-bold mb-4">Cybersecurity Integration Platform</h1>
+        <p className="text-xl text-muted-foreground mb-8">
+          Comprehensive security monitoring and compliance management
+        </p>
+        
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/integrations"
+            className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors text-center"
+          >
+            View All Integrations
+          </a>
+          
+          <button 
+            onClick={() => setShowSetup(true)}
+            className="bg-secondary text-secondary-foreground px-6 py-3 rounded-lg hover:bg-secondary/90 transition-colors"
+          >
+            Demo AWS Setup Flow
+          </button>
+        </div>
       </div>
     </div>
   );
