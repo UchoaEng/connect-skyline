@@ -36,9 +36,16 @@ const Index = () => {
             View All Integrations
           </a>
           
+          <a 
+            href="/dashboard"
+            className="bg-secondary text-secondary-foreground px-6 py-3 rounded-lg hover:bg-secondary/90 transition-colors text-center"
+          >
+            Executive Dashboard
+          </a>
+          
           <button 
             onClick={() => setShowSetup(true)}
-            className="bg-secondary text-secondary-foreground px-6 py-3 rounded-lg hover:bg-secondary/90 transition-colors"
+            className="border border-border bg-background hover:bg-accent hover:text-accent-foreground px-6 py-3 rounded-lg transition-colors"
           >
             Demo AWS Setup Flow
           </button>

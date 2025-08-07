@@ -249,7 +249,7 @@ export default function IntegrationSetup({ integration, onBack }: IntegrationSet
                   </div>
                 </div>
                 
-                <Button className="w-full" size="lg">
+                <Button className="w-full" size="lg" onClick={onBack}>
                   Complete Setup
                 </Button>
               </div>
@@ -360,8 +360,14 @@ export default function IntegrationSetup({ integration, onBack }: IntegrationSet
               Previous
             </Button>
             <Button
-              onClick={() => setCurrentStep(Math.min(4, currentStep + 1))}
-              disabled={currentStep === 4 || (currentStep === 1 && !connectionMethod)}
+              onClick={() => {
+                if (currentStep === 4) {
+                  onBack();
+                } else {
+                  setCurrentStep(Math.min(4, currentStep + 1));
+                }
+              }}
+              disabled={(currentStep === 1 && !connectionMethod)}
             >
               {currentStep === 4 ? "Finish" : "Next"}
             </Button>
