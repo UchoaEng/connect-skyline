@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+# Connect Skyline
 
-## Project info
+A front-end prototype of an **executive security dashboard** with an integration marketplace, built with Lovable.
 
-**URL**: https://lovable.dev/projects/28392801-0928-4f6a-a756-4548f2caf9f4
+[🇧🇷 Leia em português](#-português)
 
-## How can I edit this code?
+## Screens
 
-There are several ways of editing your application.
+- **Executive Security Dashboard:** security score, active integrations, critical findings and risk reduction at a glance.
+- **Integrations marketplace:** catalog of security integrations such as AWS Security Hub, a Kubernetes security scanner, a compliance automation suite (SOC 2, GDPR, HIPAA) and a threat intelligence feed.
+- **Integration setup:** guided flow to connect and finish configuring an integration.
+- **Logs:** activity and event history.
 
-**Use Lovable**
+This is a UI prototype: data is mocked in the front end and there's no backend or real connection to the listed services.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/28392801-0928-4f6a-a756-4548f2caf9f4) and start prompting.
+## Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+React · TypeScript · Vite · Tailwind CSS · shadcn/ui · Lovable
 
-**Use your preferred IDE**
+## Running locally
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Requirements: Node.js and npm.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/UchoaEng/connect-skyline.git
+cd connect-skyline
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The project can also be edited in [Lovable](https://lovable.dev/projects/28392801-0928-4f6a-a756-4548f2caf9f4); changes made there are committed to this repository automatically.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🇧🇷 Português
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Connect Skyline
 
-## What technologies are used for this project?
+Protótipo de front-end de um **dashboard executivo de segurança** com marketplace de integrações, feito no Lovable.
 
-This project is built with:
+### Telas
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Dashboard executivo de segurança:** nota de segurança, integrações ativas, achados críticos e redução de risco num relance.
+- **Marketplace de integrações:** catálogo de integrações de segurança como AWS Security Hub, scanner de segurança para Kubernetes, suíte de automação de compliance (SOC 2, GDPR, HIPAA) e feed de threat intelligence.
+- **Configuração de integração:** fluxo guiado para conectar e concluir a configuração de uma integração.
+- **Logs:** histórico de atividades e eventos.
 
-## How can I deploy this project?
+É um protótipo de interface: os dados são simulados no front-end, e não há backend nem conexão real com os serviços listados.
 
-Simply open [Lovable](https://lovable.dev/projects/28392801-0928-4f6a-a756-4548f2caf9f4) and click on Share -> Publish.
+### Stack
 
-## Can I connect a custom domain to my Lovable project?
+React, TypeScript, Vite, Tailwind CSS, shadcn/ui e Lovable.
 
-Yes, you can!
+### Como rodar
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Requisitos: Node.js e npm. Clone o repositório, rode `npm install` e `npm run dev`. O projeto também pode ser editado no [Lovable](https://lovable.dev/projects/28392801-0928-4f6a-a756-4548f2caf9f4); as mudanças feitas lá são commitadas aqui automaticamente.
